@@ -1,0 +1,143 @@
+/*write css that will be used in the project*/
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+nav .logo a:hover {
+    color: #ff0000;
+}
+
+nav .menu {
+    float: right;
+}
+
+nav .menu li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav .menu li:first-child {
+    margin-left: 0;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+nav .menu li a:hover {
+    color: #ff0000;
+}
+
+nav .menu li a.active {
+    color: #ff0000;
+}
+
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}   
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+header .logo {
+    float: left;
+}
+
+
+header .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+header .logo a:hover {
+    color: #ff0000;
+}
+header .menu {
+    float: right;
+}
+header .menu li {
+    display: inline-block;
+    margin-left: 15px;
+}
+header .menu li:first-child {
+    margin-left: 0;
+}
+header .menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+header .menu li a:hover {
+    color: #ff0000;
+}
+header .menu li a.active {
+    color: #ff0000;
+}
+header .menu li a.active::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000;
+    transition: width .3s;
+}
+header .menu li a.active:hover::after {
+    width: 100%;
+}
+header .menu li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width .3s;
+}
+header .menu li a:hover::after {
+    width: 100%;
+}
